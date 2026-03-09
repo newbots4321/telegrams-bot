@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T Channel Grow</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#0e1a2b;
+color:white;
+text-align:center;
+}
+
+.card{
+background:white;
+color:black;
+margin:15px;
+padding:15px;
+border-radius:10px;
+}
+
+button{
+width:90%;
+padding:15px;
+margin:10px;
+border:none;
+border-radius:8px;
+background:#0088cc;
+color:white;
+font-size:16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>T Channel Grow</h2>
+
+<div class="card">
+
+<h3>Your Coins</h3>
+<h1 id="coins">0</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Watch Ads</h3>
+
+<button onclick="watchAd()">Watch Ad 1</button>
+<button onclick="watchAd()">Watch Ad 2</button>
+<button onclick="watchAd()">Watch Ad 3</button>
+<button onclick="watchAd()">Watch Ad 4</button>
+<button onclick="watchAd()">Watch Ad 5</button>
+
+</div>
+
+<div class="card">
+
+<h3>Promote</h3>
+
+<input id="link" placeholder="Enter Channel / Bot Link">
+
+<button onclick="promote()">Promote</button>
+
+</div>
+
+<script>
+
+let coins = 0
+
+function updateCoins(){
+document.getElementById("coins").innerText = coins
+}
+
+function watchAd(){
+
+window.open("https://www.effectivegatecpm.com/bupvhwz5?key=eaedd439f3f1d2db330f017cf0cb29ca")
+
+setTimeout(function(){
+
+coins += 5
+updateCoins()
+
+alert("+5 Coins Added")
+
+},6000)
+
+}
+
+function promote(){
+
+let link = document.getElementById("link").value
+
+if(coins < 10){
+
+alert("Minimum 10 coins required")
+
+return
+
+}
+
+coins -= 10
+
+alert("Promotion submitted")
+
+updateCoins()
+
+}
+
+</script>
+
+</body>
+</html>
